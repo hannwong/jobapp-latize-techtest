@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "A node",
+      "x": -300,
+      "y": 0,
+      "size": 10
+    },
+    {
+      "id": "n1",
+      "label": "Another node",
+      "x": 0,
+      "y": 0,
+      "size": 10
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "color": "#00ff00",
+      "size": 10,
+      "type": "tapered"
+    }
+  ]
+}
