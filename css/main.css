@@ -1,0 +1,59 @@
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-sizing: content-box;
+}
+
+div.container {
+  width: 1024px;
+  height: 580px;
+  background-color: black;
+  margin: 0 auto;
+  padding: 5px;
+
+  color: white;
+}
+
+div#logo {
+  margin-bottom: 5px;
+}
+
+div#logo img {
+  width: 100px;
+}
+
+div.tab {
+  background-color: #54bcce;
+  width: 160px;
+  height: 26px;
+  padding: 0 5px;
+
+  /* Easy vertical centering */
+  display: flex;
+  align-items: center;
+}
+
+div.tab img {
+  vertical-align: middle;
+  width: 16px;
+  margin-right: 5px;
+}
+
+div.content {
+  display: flex;
+  border: 8px solid #54bcce;
+}
+
+#container {
+  display: flex-item;
+  width: 75%;
+  min-height: 500px;
+  background-color: white;
+  border-right: 8px solid #54bcce;
+}
+#tree {
+  display: flex-item;
+  width: 25%;
+  min-height: 500px;
+}
