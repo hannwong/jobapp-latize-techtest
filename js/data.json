@@ -5,7 +5,11 @@
       "label": "A node",
       "x": -300,
       "y": 0,
-      "size": 10
+      "size": 10,
+      "type": "circle",
+      "image": {
+        "url": "images/cust-tab.png"
+      }
     },
     {
       "id": "n1",

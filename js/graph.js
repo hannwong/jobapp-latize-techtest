@@ -9,4 +9,7 @@ sigma.parsers.json('js/data.json', {
     autoRescale: false,
     enableCamera: false
   }
+}, function(sig) {
+  CustomShapes.init(sig);
+  sig.refresh();
 });
