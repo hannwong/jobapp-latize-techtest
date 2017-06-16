@@ -1,0 +1,3 @@
+[submodule "sigma.js.fork"]
+	path = sigma.js.fork
+	url = ssh://git@bitbucket.org/jhannwong/sigma.js.fork.git
