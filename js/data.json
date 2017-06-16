@@ -10,7 +10,8 @@
       "type": "openCircle",
       "image": {
         "url": "images/icon-product.png",
-        "scale": 0.8
+        "scale": 0.8,
+        "clip": 10
       },
       "labelX": -25,
       "labelY": 33,
@@ -26,7 +27,8 @@
       "type": "circle",
       "image": {
         "url": "images/icon-product-white.png",
-        "scale": 0.8
+        "scale": 0.8,
+        "clip": 10
       },
       "labelX": -18,
       "labelY": 22,
@@ -42,7 +44,8 @@
       "type": "circle",
       "image": {
         "url": "images/icon-product-white.png",
-        "scale": 0.8
+        "scale": 0.8,
+        "clip": 10
       },
       "labelX": -20,
       "labelY": 28,
@@ -57,7 +60,8 @@
       "type": "circle",
       "image": {
         "url": "images/icon-input.png",
-        "scale": 1
+        "scale": 1,
+        "clip": 10
       }
     },
     {
@@ -66,10 +70,11 @@
       "y": 49,
       "size": 7,
       "color": "#000000",
-      "type": "circle",
+      "type": "imageCircle",
       "image": {
         "url": "images/icon-filter.png",
-        "scale": 1.5
+        "scale": 1.5,
+        "clip": 10
       }
     },
     {
@@ -78,10 +83,11 @@
       "y": 6,
       "size": 7,
       "color": "#000000",
-      "type": "circle",
+      "type": "imageCircle",
       "image": {
         "url": "images/icon-related.png",
-        "scale": 1.5
+        "scale": 1.5,
+        "clip": 10
       }
     },
     {
@@ -90,7 +96,7 @@
       "y": 5,
       "size": 73,
       "color": "#ffffff",
-      "type": "openSquare",
+      "type": "imageSquare",
       "image": {
         "url": "images/icon-main.png",
         "scale": 1
@@ -102,7 +108,7 @@
       "y": -101,
       "size": 18,
       "color": "#ffffff",
-      "type": "openSquare",
+      "type": "imageSquare",
       "image": {
         "url": "images/icon-segments.png",
         "scale": 1
