@@ -49,21 +49,72 @@
       "labelSize": 9.9
     },
     {
-      "id": "n1",
-      "label": "Another node",
-      "x": 0,
-      "y": 0,
-      "size": 10
+      "id": "input",
+      "x": -75,
+      "y": 6,
+      "size": 7,
+      "color": "#000000",
+      "type": "circle",
+      "image": {
+        "url": "images/icon-input.png",
+        "scale": 1
+      }
+    },
+    {
+      "id": "filter",
+      "x": -30,
+      "y": 49,
+      "size": 7,
+      "color": "#000000",
+      "type": "circle",
+      "image": {
+        "url": "images/icon-filter.png",
+        "scale": 1.5
+      }
+    },
+    {
+      "id": "related",
+      "x": 102,
+      "y": 6,
+      "size": 7,
+      "color": "#000000",
+      "type": "circle",
+      "image": {
+        "url": "images/icon-related.png",
+        "scale": 1.5
+      }
+    },
+    {
+      "id": "main",
+      "x": -31,
+      "y": 5,
+      "size": 73,
+      "color": "#ffffff",
+      "type": "openSquare",
+      "image": {
+        "url": "images/icon-main.png",
+        "scale": 1
+      }
+    },
+    {
+      "id": "segments",
+      "x": -31,
+      "y": -101,
+      "size": 18,
+      "color": "#ffffff",
+      "type": "openSquare",
+      "image": {
+        "url": "images/icon-segments.png",
+        "scale": 1
+      }
     }
   ],
   "edges": [
     {
-      "id": "e0",
-      "source": "skincare",
-      "target": "n1",
-      "color": "#00ff00",
-      "size": 10,
-      "type": "tapered"
+      "id": "mainSegments",
+      "source": "main",
+      "target": "segments",
+      "color": "#b3b3b3"
     }
   ]
 }
