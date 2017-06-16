@@ -1,14 +1,42 @@
 {
   "nodes": [
     {
-      "id": "n0",
-      "label": "A node",
-      "x": -300,
-      "y": 0,
+      "id": "skincare",
+      "label": "skincare",
+      "x": -311,
+      "y": 5,
+      "size": 16,
+      "color": "#256487",
+      "type": "open-circle",
+      "image": {
+        "url": "images/icon-product.png",
+        "scale": 0.8
+      }
+    },
+    {
+      "id": "features",
+      "label": "features",
+      "x": -193,
+      "y": -38,
       "size": 10,
+      "color": "#256487",
       "type": "circle",
       "image": {
-        "url": "images/cust-tab.png"
+        "url": "images/icon-product-white.png",
+        "scale": 0.8
+      }
+    },
+    {
+      "id": "channels",
+      "label": "channels",
+      "x": -193,
+      "y": 45,
+      "size": 15,
+      "color": "#256487",
+      "type": "circle",
+      "image": {
+        "url": "images/icon-product-white.png",
+        "scale": 0.8
       }
     },
     {
@@ -22,7 +50,7 @@
   "edges": [
     {
       "id": "e0",
-      "source": "n0",
+      "source": "skincare",
       "target": "n1",
       "color": "#00ff00",
       "size": 10,

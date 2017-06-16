@@ -5,29 +5,54 @@ body {
   box-sizing: content-box;
 }
 
+/* Use this to check pixel-accuracy to mock-up. */
+div.overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+}
+div.overlay img {
+  opacity: 0.5;
+  /* Assume mockup is 1024px wide, conventional. */
+  width: 1024px;
+}
+
 div.container {
   width: 1024px;
   height: 580px;
-  background-color: black;
   margin: 0 auto;
   padding: 5px;
 
   color: white;
 }
 
+/* div.overlay is positioned inside here. */
+div.view {
+  position: relative;
+  background-color: black;
+  width: 1024px;
+  height: 576px;
+}
+
 div#logo {
-  margin-bottom: 5px;
+  padding-left: 8px;
+  padding-top: 5px;
 }
 
 div#logo img {
-  width: 100px;
+  width: 102px;
 }
 
 div.tab {
-  background-color: #54bcce;
-  width: 160px;
-  height: 26px;
-  padding: 0 5px;
+  background-color: #26a9e1;
+  margin-top: 6px;
+  margin-left: 9px;
+  width: 140px;
+  height: 23px;
+  padding: 0 10px;
+  padding-top: 2px;
+  font-size: 13.3px;
 
   /* Easy vertical centering */
   display: flex;
@@ -37,23 +62,22 @@ div.tab {
 div.tab img {
   vertical-align: middle;
   width: 16px;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 div.content {
   display: flex;
-  border: 8px solid #54bcce;
+  border: 7px solid #26a9e1;
+  border-width: 8px 7px;
+  border-right-width: 8px;
+
+  margin-left: 9px;
+  width: 991px;
+  height: 491px;
 }
 
 #container {
-  display: flex-item;
-  width: 75%;
-  min-height: 500px;
+  width: 741px; /* Pixel-accuracy 1st. Responsive later. */
   background-color: white;
   border-right: 8px solid #54bcce;
-}
-#tree {
-  display: flex-item;
-  width: 25%;
-  min-height: 500px;
 }
