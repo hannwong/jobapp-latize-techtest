@@ -2,7 +2,12 @@
   "nodes": [
     {
       "id": "skincare",
-      "label": "skincare",
+      "label": {
+        "label": "skincare",
+        "labelX": -25,
+        "labelY": 33,
+        "labelSize": 13.4
+      },
       "x": -311,
       "y": 5,
       "size": 16,
@@ -12,14 +17,16 @@
         "url": "images/icon-product.png",
         "scale": 0.8,
         "clip": 10
-      },
-      "labelX": -25,
-      "labelY": 33,
-      "labelSize": 13.4
+      }
     },
     {
       "id": "features",
-      "label": "features",
+      "label": {
+        "label": "features",
+        "labelX": -18,
+        "labelY": 22,
+        "labelSize": 9.9
+      },
       "x": -193,
       "y": -38,
       "size": 10,
@@ -29,14 +36,16 @@
         "url": "images/icon-product-white.png",
         "scale": 0.8,
         "clip": 10
-      },
-      "labelX": -18,
-      "labelY": 22,
-      "labelSize": 9.9
+      }
     },
     {
       "id": "channels",
-      "label": "channels",
+      "label": {
+        "label": "channels",
+        "labelX": -20,
+        "labelY": 28,
+        "labelSize": 9.9
+      },
       "x": -193,
       "y": 45,
       "size": 15,
@@ -46,10 +55,7 @@
         "url": "images/icon-product-white.png",
         "scale": 0.8,
         "clip": 10
-      },
-      "labelX": -20,
-      "labelY": 28,
-      "labelSize": 9.9
+      }
     },
     {
       "id": "input",
@@ -92,6 +98,22 @@
     },
     {
       "id": "main",
+      "label": [
+        {
+          "label": "customers",
+          "labelX": -42,
+          "labelY": 73,
+          "labelSize": 12,
+          "weight": 900
+        },
+        {
+          "label": "85k",
+          "labelX": 23,
+          "labelY": 73,
+          "labelSize": 12,
+          "weight": 100
+        }
+      ],
       "x": -31,
       "y": 5,
       "size": 73,
@@ -113,6 +135,237 @@
         "url": "images/icon-segments.png",
         "scale": 1
       }
+    },
+    {
+      "id": "young-city-solos",
+      "label": [
+        {"label": "Young City Solos",
+         "labelX": -48,
+         "labelY": 35,
+         "labelSize": 12,
+         "weight": 900
+        },
+        {"label": "35k",
+         "labelX": -10,
+         "labelY": 49,
+         "labelSize": 12.8,
+         "weight": 100
+        }
+      ],
+      "x": -113,
+      "y": -178,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-customers.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "power-elite",
+      "label": [
+        {"label": "Power Elite",
+         "labelX": -33,
+         "labelY": 30,
+         "labelSize": 12,
+         "weight": 900
+        },
+        {"label": "30k",
+         "labelX": -10,
+         "labelY": 46,
+         "labelSize": 12.8,
+         "weight": 100
+        }
+      ],
+      "x": -30,
+      "y": -214,
+      "size": 15,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-customers.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "frequent-flyer",
+      "label": [
+        {"label": "Frequent Flyer",
+         "labelX": -43,
+         "labelY": 25,
+         "labelSize": 12,
+         "weight": 900
+        },
+        {"label": "20k",
+         "labelX": -12,
+         "labelY": 40,
+         "labelSize": 12.8,
+         "weight": 100
+        }
+      ],
+      "x": 53,
+      "y": -178,
+      "size": 11,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-customers.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "campaigns",
+      "label": [
+        {"label": "Campaigns",
+         "labelX": -24,
+         "labelY": 25,
+         "labelSize": 9,
+         "weight": 900
+        }
+      ],
+      "x": 245,
+      "y": 6,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-campaign.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "campaign1",
+      "x": 298,
+      "y": -50,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-campaign.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "campaign2",
+      "x": 322,
+      "y": 5,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-campaign.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "campaign3",
+      "x": 300,
+      "y": 60,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-campaign.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "sentiments",
+      "label": [
+        {"label": "Brand Sentiment",
+         "labelX": -37,
+         "labelY": 25,
+         "labelSize": 9,
+         "weight": 900
+        }
+      ],
+      "x": 195,
+      "y": -90,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-sentiment.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "sentiment1",
+      "label": [
+        {"label": "WeChat / Email",
+         "labelX": -25,
+         "labelY": 26,
+         "labelSize": 7.6,
+         "weight": 100
+        },
+        {"label": "Interaction",
+         "labelX": -18,
+         "labelY": 35,
+         "labelSize": 7.6,
+         "weight": 100
+        }
+      ],
+      "x": 195,
+      "y": -167,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-sentiment.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "sentiment2",
+      "label": [
+        {"label": "FB Interaction",
+         "labelX": -25,
+         "labelY": 19,
+         "labelSize": 7.6,
+         "weight": 100
+        }
+      ],
+      "x": 253,
+      "y": -146,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-sentiment.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "sentiment3",
+      "label": [
+        {"label": "LinkedIn Interactions",
+         "labelX": -36,
+         "labelY": 19,
+         "labelSize": 7.6,
+         "weight": 100
+        }
+      ],
+      "x": 275,
+      "y": -90,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-sentiment.png",
+        "scale": 1.5,
+        "clip": 10
+      }
     }
   ],
   "edges": [
@@ -121,6 +374,94 @@
       "source": "main",
       "target": "segments",
       "color": "#b3b3b3"
+    },
+    {
+      "id": "segYoung",
+      "source": "segments",
+      "target": "young-city-solos",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "segElite",
+      "source": "segments",
+      "target": "power-elite",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "segFlyer",
+      "source": "segments",
+      "target": "frequent-flyer",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "mainCampaigns",
+      "source": "main",
+      "target": "campaigns",
+      "color": "#b3b3b3",
+      "type": "tapered",
+      "size": 4
+    },
+    {
+      "id": "campaign1",
+      "source": "campaigns",
+      "target": "campaign1",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "campaign2",
+      "source": "campaigns",
+      "target": "campaign2",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "campaign3",
+      "source": "campaigns",
+      "target": "campaign3",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "sentiments",
+      "source": "related",
+      "target": "sentiments",
+      "color": "#b3b3b3",
+      "type": "tapered",
+      "size": 2
+    },
+    {
+      "id": "sentiment1",
+      "source": "sentiments",
+      "target": "sentiment1",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "sentiment2",
+      "source": "sentiments",
+      "target": "sentiment2",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "sentiment3",
+      "source": "sentiments",
+      "target": "sentiment3",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
     }
   ]
 }
