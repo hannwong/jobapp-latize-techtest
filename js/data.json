@@ -10,12 +10,12 @@
       },
       "x": -311,
       "y": 5,
-      "size": 16,
+      "size": 25,
       "color": "#256487",
-      "type": "openCircle",
+      "type": "imageCircle",
       "image": {
         "url": "images/icon-product.png",
-        "scale": 0.8,
+        "scale": 1,
         "clip": 10
       }
     },
@@ -29,12 +29,12 @@
       },
       "x": -193,
       "y": -38,
-      "size": 10,
+      "size": 15,
       "color": "#256487",
-      "type": "circle",
+      "type": "imageCircle",
       "image": {
         "url": "images/icon-product-white.png",
-        "scale": 0.8,
+        "scale": 1,
         "clip": 10
       }
     },
@@ -48,12 +48,12 @@
       },
       "x": -193,
       "y": 45,
-      "size": 15,
+      "size": 22,
       "color": "#256487",
-      "type": "circle",
+      "type": "imageCircle",
       "image": {
         "url": "images/icon-product-white.png",
-        "scale": 0.8,
+        "scale": 1,
         "clip": 10
       }
     },
@@ -61,9 +61,9 @@
       "id": "input",
       "x": -75,
       "y": 6,
-      "size": 7,
+      "size": 12,
       "color": "#000000",
-      "type": "circle",
+      "type": "imageCircle",
       "image": {
         "url": "images/icon-input.png",
         "scale": 1,
@@ -704,6 +704,42 @@
       "color": "#b3b3b3",
       "type": "tapered",
       "size": 2
+    },
+    {
+      "id": "skincareFeatures",
+      "source": "features",
+      "target": "skincare",
+      "color": "#b3b3b3",
+      "type": "taperedCurve",
+      "curvature": -0.2,
+      "size": 4
+    },
+    {
+      "id": "skincareChannels",
+      "source": "channels",
+      "target": "skincare",
+      "color": "#b3b3b3",
+      "type": "taperedCurve",
+      "curvature": 0.2,
+      "size": 4
+    },
+    {
+      "id": "inputFeatures",
+      "source": "features",
+      "target": "input",
+      "color": "#b3b3b3",
+      "type": "taperedCurve",
+      "curvature": 0.2,
+      "size": 4
+    },
+    {
+      "id": "inputChannels",
+      "source": "channels",
+      "target": "input",
+      "color": "#b3b3b3",
+      "type": "taperedCurve",
+      "curvature": -0.2,
+      "size": 4
     }
   ]
 }
