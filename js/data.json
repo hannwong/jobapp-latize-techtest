@@ -432,6 +432,118 @@
         "scale": 1.5,
         "clip": 10
       }
+    },
+    {
+      "id": "cust-years",
+      "label": [
+        {
+          "label": "years",
+          "labelX": -10,
+          "labelY": 26,
+          "labelSize": 8,
+          "color": "#236387"
+        },
+        {
+          "label": "3+",
+          "labelX": -8,
+          "labelY": 39,
+          "labelSize": 12
+        }
+      ],
+      "x": -130,
+      "y": 187,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-age.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "cust-value",
+      "label": [
+        {
+          "label": "lifetime value",
+          "labelX": -22,
+          "labelY": 27,
+          "labelSize": 8,
+          "color": "#236387"
+        },
+        {
+          "label": "high",
+          "labelX": -12,
+          "labelY": 40,
+          "labelSize": 12
+        }
+      ],
+      "x": -63,
+      "y": 186,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-hash.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "cust-influence",
+      "label": [
+        {
+          "label": "influence",
+          "labelX": -15,
+          "labelY": 27,
+          "labelSize": 8,
+          "color": "#236387"
+        },
+        {
+          "label": "high",
+          "labelX": -12,
+          "labelY": 40,
+          "labelSize": 12
+        }
+      ],
+      "x": 4,
+      "y": 186,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-hash.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "cust-sentiment",
+      "label": [
+        {
+          "label": "sentiment",
+          "labelX": -17,
+          "labelY": 27,
+          "labelSize": 8,
+          "color": "#236387"
+        },
+        {
+          "label": "positive",
+          "labelX": -20,
+          "labelY": 40,
+          "labelSize": 12
+        }
+      ],
+      "x": 71,
+      "y": 186,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-sentiment-white.png",
+        "scale": 1.5,
+        "clip": 10
+      }
     }
   ],
   "edges": [
@@ -560,6 +672,38 @@
       "color": "#b3b3b3",
       "type": "openArrow",
       "arrowSize": 8
+    },
+    {
+      "id": "cust-years",
+      "source": "cust-years",
+      "target": "filter",
+      "color": "#b3b3b3",
+      "type": "tapered",
+      "size": 2
+    },
+    {
+      "id": "cust-value",
+      "source": "cust-value",
+      "target": "filter",
+      "color": "#b3b3b3",
+      "type": "tapered",
+      "size": 2
+    },
+    {
+      "id": "cust-influence",
+      "source": "cust-influence",
+      "target": "filter",
+      "color": "#b3b3b3",
+      "type": "tapered",
+      "size": 2
+    },
+    {
+      "id": "cust-sentiment",
+      "source": "cust-sentiment",
+      "target": "filter",
+      "color": "#b3b3b3",
+      "type": "tapered",
+      "size": 2
     }
   ]
 }
