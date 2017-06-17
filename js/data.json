@@ -366,6 +366,72 @@
         "scale": 1.5,
         "clip": 10
       }
+    },
+    {
+      "id": "browsings",
+      "label": [
+        {"label": "Browsing",
+         "labelX": -21,
+         "labelY": 28,
+         "labelSize": 8.7,
+         "weight": 900
+        },
+        {"label": "Behavior",
+         "labelX": -20,
+         "labelY": 39,
+         "labelSize": 8.7,
+         "weight": 900
+        }
+      ],
+      "x": 195,
+      "y": 103,
+      "size": 16,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-browsing.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "browsing1",
+      "x": 274,
+      "y": 102,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-browsing.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "browsing2",
+      "x": 253,
+      "y": 158,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-browsing.png",
+        "scale": 1.5,
+        "clip": 10
+      }
+    },
+    {
+      "id": "browsing3",
+      "x": 195,
+      "y": 178,
+      "size": 10,
+      "color": "#000000",
+      "type": "imageCircle",
+      "image": {
+        "url": "images/icon-browsing.png",
+        "scale": 1.5,
+        "clip": 10
+      }
     }
   ],
   "edges": [
@@ -440,6 +506,14 @@
       "size": 2
     },
     {
+      "id": "browsings",
+      "source": "related",
+      "target": "browsings",
+      "color": "#b3b3b3",
+      "type": "tapered",
+      "size": 2
+    },
+    {
       "id": "sentiment1",
       "source": "sentiments",
       "target": "sentiment1",
@@ -459,6 +533,30 @@
       "id": "sentiment3",
       "source": "sentiments",
       "target": "sentiment3",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "browsing1",
+      "source": "browsings",
+      "target": "browsing1",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "browsing2",
+      "source": "browsings",
+      "target": "browsing2",
+      "color": "#b3b3b3",
+      "type": "openArrow",
+      "arrowSize": 8
+    },
+    {
+      "id": "browsing3",
+      "source": "browsings",
+      "target": "browsing3",
       "color": "#b3b3b3",
       "type": "openArrow",
       "arrowSize": 8
