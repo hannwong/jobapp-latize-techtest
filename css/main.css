@@ -36,6 +36,7 @@ div.view {
 }
 
 div#logo {
+  float: left;
   padding-left: 8px;
   padding-top: 5px;
 }
@@ -44,7 +45,41 @@ div#logo img {
   width: 102px;
 }
 
+div.top-right {
+  float: right;
+  width: 175px;
+  height: 26px;
+  padding-top: 8px;
+  padding-bottom: 1px;
+}
+
+div.input-container {
+  border-radius: 8px;
+  display: inline-block;
+  background-color: white;
+}
+input {
+  border: 0;
+  width: 116px;
+  height: 17px;
+  background: url('../images/icon-search.png') no-repeat 100px 3px;
+  background-size: 11px;
+}
+
+div.top-right img {
+  vertical-align: middle;
+}
+
+div.top-right img:nth-of-type(1) {
+  margin-left: 3px;
+  width: 17px;
+}
+div.top-right img:nth-of-type(2) {
+  width: 26px;
+}
+
 div.tab {
+  clear: both;
   background-color: #26a9e1;
   margin-top: 6px;
   margin-left: 9px;
@@ -80,4 +115,197 @@ div.content {
   width: 741px; /* Pixel-accuracy 1st. Responsive later. */
   background-color: white;
   border-right: 8px solid #26a9e1;
+}
+
+#tree {
+  width: 242px;
+  background-color: white;
+}
+
+#tree ul {
+  color: black;
+}
+
+#tree > ul > li:nth-child(1) {
+  list-style: none;
+  margin-left: -30px;
+  background-image: url('../images/icon-customers.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 22px;
+  padding: 2px 0px 6px 27px;
+
+  font-size: 12.1px;
+  position: relative;
+}
+
+/* Vertical arrow from 1st list item. */
+#tree > ul > li:nth-child(1) > img {
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  left: 9px;
+  height: 13px;
+  background-image: url('../images/list-arrow.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+#tree > ul > li:nth-child(2) {
+  list-style: none;
+  margin-left: -30px;
+  background-image: url('../images/list-segments.png');
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 15px;
+  margin-top: 11px;
+  margin-bottom: 37px;
+  padding: 2px 0px 6px 26px;
+
+  font-size: 9.5px;
+  position: relative;
+}
+
+#tree > ul > li:nth-child(3) {
+  list-style: none;
+}
+
+#tree > ul > li:nth-child(3) > ul {
+  margin: -29px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  background-color: #2aabe4;
+  color: white;
+  width: 180px;
+}
+#tree > ul > li:nth-child(3) {
+  position: relative;
+}
+#tree > ul > li:nth-child(3) .arrow-up {
+  position: absolute;
+  top: -5px;
+  left: -22px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 5px solid #2aabe4;
+}
+
+#tree > ul > li:nth-child(3) li {
+  list-style: none;
+  margin-left: -37px;
+  background-image: url('../images/list-selected.png');
+  background-repeat: no-repeat;
+  background-position: 4px 11px;
+  background-size: 5px;
+  padding: 6px 0px 4px 15px;
+
+  font-size: 12px;
+  position: relative;
+}
+
+#tree > ul > ul> li:nth-child(4),
+#tree > ul > ul> li:nth-child(5),
+#tree > ul > ul> li:nth-child(6) {
+  background-image: url('../images/list-deselected.png');
+}
+
+#tree > ul > li:nth-child(4),
+#tree > ul > li:nth-child(5),
+#tree > ul > li:nth-child(6),
+#tree > ul > li:nth-child(7),
+#tree > ul > li:nth-child(8) {
+  list-style: none;
+  margin-left: -26px;
+  background-image: url('../images/icon-filter.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 16px;
+  padding: 2px 0px 8px 21px;
+
+  font-size: 9.5px;
+  position: relative;
+}
+
+#tree > ul > li:nth-child(8) {
+  background-image: url('../images/icon-related.png');
+  background-size: 16px;
+  padding-top: 0px;
+}
+
+#tree > ul > li > .line-before {
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  background-color: #cccccc;
+  width: 2px;
+  height: 10px;
+}
+
+#tree > ul > li > .line-after {
+  position: absolute;
+  top: 16px;
+  left: 7px;
+  background-color: #cccccc;
+  width: 2px;
+  height: 6px;
+}
+
+#tree > ul > li > .value {
+  margin-left: 5px;
+  font-size: 10px;
+  color: #23648a;
+}
+
+#tree > ul > li:nth-child(9) {
+  list-style: none;
+}
+
+#tree > ul > li:nth-child(9) > ul {
+  margin-left: -16px;
+}
+
+#tree > ul > li:nth-child(9) li {
+  list-style: none;
+  color: #23648a;
+  margin-left: -26px;
+  background-image: url('../images/icon-sentiment.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 21px;
+  padding: 3px 0px 11px 26px;
+
+  font-size: 9.8px;
+  position: relative;
+}
+
+#tree > ul > li:nth-child(9) li .line-vert {
+  position: absolute;
+  top: 3px;
+  left: -17px;
+  background-color: #cccccc;
+  width: 2px;
+  height: 26px;
+}
+#tree > ul > li:nth-child(9) li:last-child .line-vert {
+  height: 7px;
+}
+#tree > ul > li:nth-child(9) li .line-hor {
+  position: absolute;
+  top: 10px;
+  left: -17px;
+  background-color: #cccccc;
+  width: 17px;
+  height: 2px;
+}
+
+#tree > ul > li:nth-child(9) li:nth-child(2) {
+  padding-top: 4px;
+  background-image: url('../images/icon-campaign.png');
+}
+
+#tree > ul > li:nth-child(9) li:nth-child(3) {
+  padding-top: 5px;
+  background-image: url('../images/icon-browsing.png');
 }

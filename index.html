@@ -5,15 +5,47 @@
 <body>
   <div class="container">
     <div class="view">
+      <div class="overlay"><img src="ui2_customer-overview.jpg"></div>
       <div id="logo"><img src="images/logo.png"></div>
+      <div class="top-right">
+        <div class="input-container"><input></div>
+        <img src="images/icon-profile.png">
+        <img src="images/icon-alerts.png">
+      </div>
       <div class="tab">
         <img src="images/cust-tab.png">customers
       </div>
       <div class="content">
         <div id="container"></div>
-        <div id="tree"></div>
+        <div id="tree">
+          <ul>
+            <li><img src="../images/list-arrow.png"><b>customers</b> 85k</li>
+            <li>segments</li>
+            <li><span class="arrow-up"></span>
+              <ul>
+                <li><b>Young City Solos</b> 35k</li>
+                <li><b>Power Elite</b> 30k</li>
+                <li><b>Suburban Style</b> 20k</li>
+                <li><b>Significant Singles</b> 35k</li>
+                <li><b>Thriving Boomers</b> 30k</li>
+                <li><b>Flourishing Families</b> 20k</li>
+              </ul>
+            </li>
+            <li><span class="line-before"></span>years <span class="value">3+</span><span class="line-after"></span></li>
+            <li>lifetime value <span class="value">high</span><span class="line-after"></li>
+            <li>sentiment <span class="value">positive</span><span class="line-after"></li>
+            <li>influence <span class="value">high</span><span class="line-after"></li>
+            <li>related <span class="line-after"></li>
+            <li>
+              <ul>
+                <li><span class="line-vert"></span><span class="line-hor"></span>Brand Sentiment</li>
+                <li><span class="line-vert"></span><span class="line-hor"></span>Campaigns</li>
+                <li><span class="line-vert"></span><span class="line-hor"></span>Browsing Behavior</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="overlay"><img src="ui2_customer-overview.jpg"></div>
     </div>
   </div>
 
@@ -41,6 +73,7 @@
 <script src="js/sigma/misc/sigma.misc.drawHovers.js"></script>
 <!-- END SIGMA IMPORTS -->
 
+<script src="js/sigma/renderers/canvas/sigma.canvas.edges.curve.js"></script>
 <script src="js/sigma-plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.tapered.js"></script>
 <script src="js/sigma-plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.openArrow.js"></script>
 <script src="js/sigma-plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.taperedCurve.js"></script>
