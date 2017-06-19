@@ -6,7 +6,7 @@ The mockup (ui2_customer-overview.jpg) is the property of Latize.
 
 The rest of this repository is the property of Jon Wong, the owner of this GitHub account.
 
-# Pixel-Accuracy CSS
+# Pixel-Accurate CSS
 
 The endeavor was to achieve pixel-accurate positioning and sizing of HTML elements using CSS.
 
