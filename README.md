@@ -40,6 +40,14 @@ Using CSS to style the positioning, bullet images and connective lines, I was ab
 
 http://startupjobs.asia/job/28446-front-end-engineer-front-end-developers-latize-pte-ltd-singapore
 
+Other roles I'm attempting: http://startupjobs.asia/job/16911-software-engineer-full-stack-developer-it-job-at-latize-pte-ltd-singapore
+
+There were about 10 other roles published at startupjobs.asia when I applied on Monday (12 Jun 2017). Sadly, they seem to have closed all those other roles by 19 Jun 2017; note the right side-bar "Other Openings" show that only 1 role is left: Front end Engineer. I submitted this answer to their technical test on 17 Jun 2017, deadline 19 Jun.
+
+Perhaps this is because Latize thinks I can fill all the other roles? :-) Nurhida responded to my email positively when I suggested that they remove SVN as a requirement (I know SVN and CVS); central SVN repo hinders rapid Agile techniques. She seemed very interested in having me install world-class productivity and best practices (eg. migrating from SVN to Git, for starters). Latize also seems to have expired all roles except mine at here: [jobspotting.com](https://jobspotting.com/en/company/latize).
+
+I'm really psyched and excited to get this chance to help create a world-class IT company in Singapore! For many years now, companies here are at least a decade beyond world-class productivity and best practices.
+
 ## Front end Engineer
 
 At Latize we put the power in the hands of the masses to bring together diverse information and blend them seamlessly. We provide intuitive tools to make it work for you. This is what we do with our revolutionary data management platform – Ulysses; we enable non-technical users to capture, harmonise, and use data. Welcome to the real data revolution!
