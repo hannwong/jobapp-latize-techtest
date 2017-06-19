@@ -36,6 +36,12 @@ The right part of the mockup is done completely with HTML lists.
 
 Using CSS to style the positioning, bullet images and connective lines, I was able to implement the exact aethestics required for the tree view.
 
+# Git Competence
+
+At http://jon-wong-sutd.github.io/git-lessons/git-lesson/
+
+That's an attempt at creating a trim yet complete *Getting Started* guide to Git. Students at SUTD (and everybody in Singapore, in fact) needs to get comfortable with Git and Agile working techniques.
+
 # Job Description
 
 http://startupjobs.asia/job/28446-front-end-engineer-front-end-developers-latize-pte-ltd-singapore
