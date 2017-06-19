@@ -46,7 +46,9 @@ There were about 10 other roles published at startupjobs.asia when I applied on 
 
 Perhaps this is because Latize thinks I can fill all the other roles? :-) Nurhida responded to my email positively when I suggested that they remove SVN as a requirement (I know SVN and CVS); central SVN repo hinders rapid Agile techniques. She seemed very interested in having me install world-class productivity and best practices (eg. migrating from SVN to Git, for starters). Latize also seems to have expired all roles except mine at here: [jobspotting.com](https://jobspotting.com/en/company/latize).
 
-I'm really psyched and excited to get this chance to help create a world-class IT company in Singapore! For many years now, companies here are at least a decade beyond world-class productivity and best practices.
+I'm really psyched and excited to get this chance to help create a world-class IT company in Singapore! For many years now, companies here are at least a decade behin world-class productivity and best practices.
+
+The *Front end Engineer* job description follows:
 
 ## Front end Engineer
 
