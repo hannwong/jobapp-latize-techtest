@@ -183,14 +183,14 @@ div.content {
       height: 0;
       border-left: 4px solid transparent;
       border-right: 4px solid transparent;
-      border-bottom: 5px solid #2aabe4;
+      border-bottom: 5px solid $segmentsBlue;
     }
 
     > ul {
       margin: -29px;
       margin-bottom: 10px;
       padding-bottom: 6px;
-      background-color: #2aabe4;
+      background-color: $segmentsBlue;
       color: white;
       width: 180px;
     }
@@ -234,21 +234,20 @@ div.content {
   }
 
   /* Connecting lines between list items */
-  > .line-before {
+  > .line-before, > .line-after {
     position: absolute;
-    top: -10px;
     left: 7px;
-    background-color: #cccccc;
-    width: 2px;
+    width: $listLinesWidth;
+    background-color: $listLinesColor;
+  }
+
+  > .line-before {
+    top: -10px;
     height: 10px;
   }
 
   > .line-after {
-    position: absolute;
     top: 16px;
-    left: 7px;
-    background-color: #cccccc;
-    width: 2px;
     height: 6px;
   }
 
@@ -256,7 +255,7 @@ div.content {
   > .value {
     margin-left: 5px;
     font-size: 10px;
-    color: #23648a;
+    color: $valuesColor;
   }
 
   /* Related items */
@@ -264,7 +263,7 @@ div.content {
     margin-left: -16px;
 
     li {
-      color: #23648a;
+      color: $valuesColor;
       margin-left: -26px;
       background-image: url('../images/icon-sentiment.png');
       background-repeat: no-repeat;
@@ -275,12 +274,15 @@ div.content {
       font-size: 9.8px;
 
       /* Connecting lines between items */
-      .line-vert {
+      .line-vert, .line-hor {
         position: absolute;
-        top: 3px;
+        background-color: $listLinesColor;
         left: -17px;
-        background-color: #cccccc;
-        width: 2px;
+      }
+
+      .line-vert {
+        top: 3px;
+        width: $listLinesWidth;
         height: 26px;
       }
 
@@ -290,12 +292,9 @@ div.content {
       }
 
       .line-hor {
-        position: absolute;
         top: 10px;
-        left: -17px;
-        background-color: #cccccc;
         width: 17px;
-        height: 2px;
+        height: $listLinesWidth;
       }
 
       &:nth-child(2) {
