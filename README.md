@@ -22,7 +22,7 @@ You can tune the opacity to turn on/off the mockup overlay.
 
 SCSS is done in `scss` folder. You can compile with gem-installed `sass`. The SCSS is much cleaner and neater than `css/main.css`.
 
-# Sigma.js Hacking
+# Sigma.js Hacking (and Reverse-Engineering)
 
 The library Sigma.js was hacked and modified to extend functionality in these areas:
 
@@ -30,6 +30,10 @@ The library Sigma.js was hacked and modified to extend functionality in these ar
 * Display nodes without color fill, allowing edges to pass through and touch circular nodes.
 * Curved tapered edges.
 * Node label placement, multiple labels.
+
+**I have no prior experience with Sigma.js. I reverse-engineer new/emerging technologies rapidly, and can hence extend them for new precedents in solutions.**
+
+I have taken apart various technologies based on various platforms --- Java, C/C++, Ruby, Perl, Javascript, Python, Scala, Lisp, and more. I started "*programming*" by reverse-engineering everything I got my hands on, effectively *learning any technology within days or weeks* (rather than months or years).
 
 # Exercise in CSS for HTML Lists
 
