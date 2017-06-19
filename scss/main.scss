@@ -1,0 +1,312 @@
+@import 'variables';
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-sizing: content-box;
+}
+
+/* Use this to check pixel-accuracy to mock-up. */
+div.overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+
+  img {
+    opacity: $opacity;
+    /* Assume mockup is 1024px wide, conventional. */
+    width: $mockupWidth;
+  }
+}
+
+div.container {
+  width: $mockupWidth;
+  height: $mockupHeight;
+  margin: 0 auto;
+  padding: 5px;
+
+  color: white;
+}
+
+/* div.overlay is positioned inside here. */
+div.view {
+  position: relative;
+  background-color: black;
+  width: $mockupWidth;
+  height: $mockupHeight - 4;
+}
+
+div#logo {
+  float: left;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+div#logo img {
+  width: 102px;
+}
+
+div.top-right {
+  float: right;
+  width: 175px;
+  height: 26px;
+  padding-top: 8px;
+  padding-bottom: 1px;
+}
+
+div.input-container {
+  border-radius: 8px;
+  display: inline-block;
+  background-color: white;
+}
+
+input {
+  border: 0;
+  width: 116px;
+  height: 17px;
+  background: url('../images/icon-search.png') no-repeat 100px 3px;
+  background-size: 11px;
+}
+
+div.top-right img {
+  vertical-align: middle;
+
+  &:nth-of-type(1) {
+    margin-left: 3px;
+    width: 17px;
+  }
+
+  &:nth-of-type(2) {
+    width: 26px;
+  }
+}
+
+div.tab {
+  clear: both;
+  background-color: $mainBlue;
+  margin-top: 6px;
+  margin-left: 9px;
+  width: 140px;
+  height: 23px;
+  padding: 0 10px;
+  padding-top: 2px;
+  font-size: 13.3px;
+
+  /* Easy vertical centering */
+  display: flex;
+  align-items: center;
+
+  img {
+    vertical-align: middle;
+    width: 16px;
+    margin-right: 6px;
+  }
+}
+
+div.content {
+  display: flex;
+  border: 7px solid $mainBlue;
+  border-width: 8px 7px;
+  border-right-width: 8px;
+
+  margin-left: 9px;
+  width: $mockupWidth - 33;
+  height: $mockupHeight - 89;
+}
+
+#container {
+  width: $graphWidth; /* Pixel-accuracy 1st. Responsive later. */
+  background-color: white;
+  border-right: 8px solid $mainBlue;
+}
+
+#tree {
+  width: $treeWidth;
+  background-color: white;
+}
+
+#tree ul {
+  color: black;
+}
+
+#tree li {
+  position: relative; /* Ready to take absolute positioning within. */
+  list-style: none; /* Use our own bullets */
+}
+
+#tree > ul > li {
+  &:nth-child(1) {
+    margin-left: -30px;
+    background-image: url('../images/icon-customers.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 22px;
+    padding: 2px 0px 6px 27px;
+
+    font-size: 12.1px;
+
+    /* Vertical arrow from 1st list item. */
+    > img {
+      display: inline-block;
+      position: absolute;
+      top: 22px;
+      left: 9px;
+      height: 13px;
+      background-image: url('../images/list-arrow.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-left: -30px;
+    background-image: url('../images/list-segments.png');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-size: 15px;
+    margin-top: 11px;
+    margin-bottom: 37px;
+    padding: 2px 0px 6px 26px;
+
+    font-size: 9.5px;
+  }
+
+  /* Segments */
+  &:nth-child(3) {
+    .arrow-up {
+      position: absolute;
+      top: -5px;
+      left: -22px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 5px solid #2aabe4;
+    }
+
+    > ul {
+      margin: -29px;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      background-color: #2aabe4;
+      color: white;
+      width: 180px;
+    }
+
+    li {
+      margin-left: -37px;
+      background-image: url('../images/list-selected.png');
+      background-repeat: no-repeat;
+      background-position: 4px 11px;
+      background-size: 5px;
+      padding: 6px 0px 4px 15px;
+
+      font-size: 12px;
+
+      /* Deselected */
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        background-image: url('../images/list-deselected.png');
+      }
+    }
+  }
+
+  /* Filters */
+  &:nth-child(4), &:nth-child(5), &:nth-child(6),
+  &:nth-child(7), &:nth-child(8) {
+    margin-left: -26px;
+    background-image: url('../images/icon-filter.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 16px;
+    padding: 2px 0px 8px 21px;
+
+    font-size: 9.5px;
+  }
+
+  /* Related */
+  &:nth-child(8) {
+    background-image: url('../images/icon-related.png');
+    padding-top: 0px;
+  }
+
+  /* Connecting lines between list items */
+  > .line-before {
+    position: absolute;
+    top: -10px;
+    left: 7px;
+    background-color: #cccccc;
+    width: 2px;
+    height: 10px;
+  }
+
+  > .line-after {
+    position: absolute;
+    top: 16px;
+    left: 7px;
+    background-color: #cccccc;
+    width: 2px;
+    height: 6px;
+  }
+
+  /* Filter values */
+  > .value {
+    margin-left: 5px;
+    font-size: 10px;
+    color: #23648a;
+  }
+
+  /* Related items */
+  &:nth-child(9) > ul {
+    margin-left: -16px;
+
+    li {
+      color: #23648a;
+      margin-left: -26px;
+      background-image: url('../images/icon-sentiment.png');
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: 21px;
+      padding: 3px 0px 11px 26px;
+
+      font-size: 9.8px;
+
+      /* Connecting lines between items */
+      .line-vert {
+        position: absolute;
+        top: 3px;
+        left: -17px;
+        background-color: #cccccc;
+        width: 2px;
+        height: 26px;
+      }
+
+      /* Last vertical line is shorter */
+      &:last-child .line-vert {
+        height: 7px;
+      }
+
+      .line-hor {
+        position: absolute;
+        top: 10px;
+        left: -17px;
+        background-color: #cccccc;
+        width: 17px;
+        height: 2px;
+      }
+
+      &:nth-child(2) {
+        padding-top: 4px;
+        background-image: url('../images/icon-campaign.png');
+      }
+
+      &:nth-child(3) {
+        padding-top: 5px;
+        background-image: url('../images/icon-browsing.png');
+      }
+    }
+  }
+}
