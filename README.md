@@ -20,7 +20,7 @@ The mockup is overlaid to facilitate this endeavor. See `css/main.css`:
 
 You can tune the opacity to turn on/off the mockup overlay.
 
-No effort was made to use SCSS because Latize seemed unable (or unavailable) to access Git repos (whether on BitBucket or GitHub), and hence unable to run a Grunt/Gulp build script to see SCSS in action. Still, SCSS capability can be demonstrated on request.
+SCSS is done in `scss` folder. You can compile with gem-installed `sass`. The SCSS is much cleaner and neater than `css/main.css`.
 
 # Sigma.js Hacking
 
